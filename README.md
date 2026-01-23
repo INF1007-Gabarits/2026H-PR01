@@ -482,6 +482,4 @@ Le projet est noté sur **20 points**. Le barème détaillé est le suivant :
 |                                                   | Ajout dynamique de nouvelles paires pendant la partie                | 0.5        |
 | **Total**                                         |                                                                      | **/20**    |
 
-
 ---
-
