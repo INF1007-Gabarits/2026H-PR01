@@ -40,19 +40,23 @@ def restart_game():
 while running:
     clock.tick(FPS)
 
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+    # ======================== PARTIE 5.4 ========================
+    # TODO : Boucle d'événements (clavier + fermeture fenêtre)
+    # - Parcourir les événements Pygame avec pygame.event.get()
+    # - Si l'utilisateur ferme la fenêtre (pygame.QUIT), mettre running = False
+    # - Si une touche est pressée (pygame.KEYDOWN) :
+    #     - Si la partie est terminée (bird_dict["lives"] <= 0) et que la touche est R (pygame.K_r) :
+    #           appeler restart_game()
+    #     - Sinon, si la touche est ESPACE (pygame.K_SPACE) et que l'oiseau a encore des vies :
+    #           appeler jump()
+    #
+    # TODO : Gestion de l'état "Game Over"
+    # - Si bird_dict["lives"] <= 0 :
+    #     - afficher le message show_game_over_message()
+    #     - ignorer le reste de la boucle (utiliser continue)
 
-        if event.type == pygame.KEYDOWN:
-            if bird_dict["lives"] <= 0 and event.key==pygame.K_r:
-                restart_game()
-            elif event.key == pygame.K_SPACE and bird_dict["lives"] > 0:
-                jump()
+    pass  # À compléter (gestion des événements)
 
-    if bird_dict["lives"] <= 0:
-        show_game_over_message()
-        continue
 
     apply_gravity()
     move_pipes()
