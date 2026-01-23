@@ -312,7 +312,7 @@ Dans la fonction `check_collision()` du fichier `game.py`, vous devez vérifier 
 **Indications :**
 1. [Créez un rectangle pygame (`pygame.Rect`)](https://www.pygame.org/docs/ref/rect.html) représentant l’oiseau à partir de sa position (`x`, `y`) et de ses dimensions (`BIRD_SIZE`).
 2. Pour chaque tuyau dans la liste `PIPES`, créez un rectangle similaire à partir de ses propriétés.
-3. Vérifiez si les rectangles se chevauchent (collision).
+3. Vérifiez si les rectangles se chevauchent (collision) à l’aide de la méthode [`pygame.Rect.colliderect()`](https://www.pygame.org/docs/ref/rect.html#pygame.Rect.colliderect).
 4. Vérifiez également si l’oiseau :
    - touche le sol,
    - dépasse le haut de l’écran.
