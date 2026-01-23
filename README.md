@@ -310,7 +310,7 @@ Toujours dans `game.py` :
 Dans la fonction `check_collision()` du fichier `game.py`, vous devez vérifier si l’oiseau entre en collision avec un obstacle ou sort de la zone de jeu.
 
 **Indications :**
-1. Créez un rectangle représentant l’oiseau à partir de sa position (`x`, `y`) et de ses dimensions (`BIRD_SIZE`).
+1. [Créez un rectangle pygame (`pygame.Rect`)](https://www.pygame.org/docs/ref/rect.html) représentant l’oiseau à partir de sa position (`x`, `y`) et de ses dimensions (`BIRD_SIZE`).
 2. Pour chaque tuyau dans la liste `PIPES`, créez un rectangle similaire à partir de ses propriétés.
 3. Vérifiez si les rectangles se chevauchent (collision).
 4. Vérifiez également si l’oiseau :
