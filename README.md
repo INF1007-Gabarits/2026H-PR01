@@ -408,8 +408,10 @@ Le projet est noté sur **20 points**. Le barème détaillé est le suivant :
 | | Création du dictionnaire `pipes_dict` avec tuyau haut et bas | 1 |
 | 2.2 : Génération des paires de tuyaux | | |
 | | Génération d’un gap aléatoire entre `MIN_PIPE_GAP` et `MAX_PIPE_GAP` | 1 |
-| | Positionnement cohérent du tuyau du bas | 1 |
-| | Calcul correct de la position du tuyau du haut | 1 |
+| | Positionnement cohérent du tuyau du bas | 0.5 |
+| | Calcul correct de la position du tuyau du haut | 0.5 |
+| | Création des dictionnaires de tuyaux | 0.5 |
+| | Ajout des dictionnaires de tuyaux dans `PIPES` | 0.5 |
 | **PARTIE 3 : Physique et déplacements 🎮** | | **/5** |
 | 3.1 : Gravité | | |
 | | Ajout de la gravité à la vitesse verticale | 1 |
