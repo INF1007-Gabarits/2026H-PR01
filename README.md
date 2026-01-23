@@ -199,8 +199,8 @@ Dans le fichier `window.py`, complétez la fonction `add_pipes()`.
 
 💡 **Indication concrète** (vous pouvez reprendre cette logique telle quelle) :
 ```python
-min_bottom_y = 250
-max_bottom_y = SCREEN_HEIGHT - 112 - 100
+min_bottom_y = ...
+max_bottom_y = SCREEN_HEIGHT - ...
 bottom_y = random.randint(min_bottom_y, max_bottom_y)
 ```
 
