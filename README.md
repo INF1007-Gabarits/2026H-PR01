@@ -385,11 +385,11 @@ for event in pygame.event.get():
     ...
 ```
 
-#### a) Quitter le jeu
+#### Étape 1 : Quitter le jeu
 - Si l’utilisateur ferme la fenêtre, vous devez arrêter la boucle principale.
 - Indice : vérifiez si l’événement est de type `pygame.QUIT`.
 
-#### b) Détecter les touches clavier (KEYDOWN)
+#### Étape 2 : Détecter les touches clavier (KEYDOWN)
 Vous devez utiliser les événements `KEYDOWN` pour détecter lorsqu’une touche est **pressée** :
 
 ```python
@@ -399,7 +399,7 @@ if event.type == pygame.KEYDOWN:
 
 Ensuite, vous devez vérifier la touche pressée via `event.key`.
 
-#### c) Contrôles à implémenter (Flappy Bird)
+#### Étape 3 : Contrôles à implémenter (Flappy Bird)
 - **Touche ESPACE (`pygame.K_SPACE`)** :
   - Si la partie **n’est pas terminée** (l’oiseau a encore des vies), l’oiseau doit **sauter**.
   - Pour cela, appelez la fonction `jump()`.
@@ -408,7 +408,7 @@ Ensuite, vous devez vérifier la touche pressée via `event.key`.
   - Si la partie est **terminée** (plus aucune vie), la touche **R** doit **relancer une partie**.
   - Pour cela, appelez la fonction `restart_game()`.
 
-#### d) Affichage « Game Over »
+#### Étape 4 : Affichage « Game Over »
 Lorsque la partie est terminée (plus de vie), vous devez :
 1. afficher le message de fin de partie via `show_game_over_message()`,
 2. ignorer le reste de la boucle (ne pas appliquer la gravité, ne pas déplacer les tuyaux, etc.).
