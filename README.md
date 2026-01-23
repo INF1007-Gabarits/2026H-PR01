@@ -476,10 +476,15 @@ Le projet est noté sur **20 points**. Le barème détaillé est le suivant :
 | 5.2 : Fonction `restart_game()`                   |                                                                      |            |
 |                                                   | Réinitialisation correcte de la position et vitesse de l’oiseau      | 0.5        |
 |                                                   | Réinitialisation des vies et du score                                | 0.5        |
-|                                                   | Vidage de la liste `PIPES`                                           | 0.5        |
-|                                                   | Ajout d’une nouvelle paire de tuyaux                                 | 0.5        |
+|                                                   | Vidage de la liste `PIPES`                                           | 0.25       |
+|                                                   | Ajout d’une nouvelle paire de tuyaux                                 | 0.25       |
 | 5.3 : Génération continue des tuyaux              |                                                                      |            |
 |                                                   | Ajout dynamique de nouvelles paires pendant la partie                | 0.5        |
+| 5.4 : Gestion des événements & fin de partie      |                                                                      |            |
+|                                                   | Gestion de `pygame.QUIT` (fermeture de la fenêtre)                   | 0.25       |
+|                                                   | Gestion de `KEYDOWN` : `SPACE` (saut) et `R` (redémarrage)            | 0.25       |
+|                                                   | Blocage du jeu en état *Game Over* (`continue`, pas de saut possible) | 0.25       |
 | **Total**                                         |                                                                      | **/20**    |
+
 
 ---
