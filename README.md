@@ -101,6 +101,10 @@ flappy_bird/
   - contient la boucle principale du jeu,
   - gère les événements clavier,
   - gère le redémarrage de la partie.
+ 
+Le schéma suivant illustre les variables `SCREEN_WIDTH`, `SCREEN_HEIGHT` et `LANE_HEIGHT`. À noter que la coordonnée `(0,0)` se retrouve en haut à gauche de l'écran du jeu.
+
+<img width="3389" height="4679" alt="Coordonnees_Flappy_Bird" src="https://github.com/user-attachments/assets/97101aa0-cc33-472f-add2-647cd9171d97" />
 
 ---
 
