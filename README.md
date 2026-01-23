@@ -134,7 +134,7 @@ Toujours dans `bird.py`, vous devez initialiser le dictionnaire global `bird_dic
 
 **Clés à initialiser :**
 - `x` : position horizontale initiale de l’oiseau. Vous devez utiliser la constante `BIRD_X`.
-- `y` : position verticale initiale. L’oiseau doit être centré verticalement dans la fenêtre. Pour cela, utilisez `SCREEN_HEIGHT // 2`.
+- `y` : position verticale initiale. L’oiseau doit être centré verticalement dans la fenêtre. Pour cela, utilisez la variable `SCREEN_HEIGHT`.
 - `vel_y` : vitesse verticale initiale, qui doit commencer à `0`.
 - `lives` : nombre de vies initiales, défini par la constante `LIVES`.
 - `score` : score initial, qui doit commencer à `0`.
