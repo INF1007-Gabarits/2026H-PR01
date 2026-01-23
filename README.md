@@ -238,10 +238,10 @@ Chaque tuyau doit être représenté par un dictionnaire contenant **exactement*
 
 ```python
 {
-  "x": x,
-  "y": y,
-  "width": PIPE_SIZE[0],
-  "height": PIPE_SIZE[1],
+  "x": ...,
+  "y": ...,
+  "width": ..., 
+  "height": ...,
   "image": ...,
   "passed": False
 }
