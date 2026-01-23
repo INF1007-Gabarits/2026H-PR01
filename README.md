@@ -209,11 +209,7 @@ bottom_y = random.randint(min_bottom_y, max_bottom_y)
 #### Étape 4 : Calcul du tuyau du haut
 
 - La position `y` du tuyau du haut **ne doit pas être choisie au hasard**.
-- Elle doit être calculée à partir du tuyau du bas :
-
-```python
-top_y = bottom_y - gap - PIPE_SIZE[1]
-```
+- Elle doit être calculée à partir du tuyau du bas. Ainsi, calculez `top_y` qui correspond à la position `y` du tuyau du haut.
 
 ---
 
