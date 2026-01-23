@@ -1,7 +1,7 @@
 # Projet – Flappy Bird 🐦 (INF1007)
 
 ## Directives
-:alarm_clock: **Date de remise** : 22 février avant minuit 
+:alarm_clock: **Date de remise** : 22 février 2026 à minuit 
 :mailbox_with_mail: **Remise** : sur Moodle (voir directives en fin de document)
 
 ---
