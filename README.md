@@ -374,6 +374,51 @@ Dans la boucle principale de `main.py`, vous devez générer de nouvelles paires
 
 ---
 
+### 5.4 : Gestion des événements clavier (KEYDOWN) & fin de partie
+
+Dans `main.py`, vous devez compléter la **boucle d’événements** afin que le jeu réagisse correctement aux actions de l’utilisateur.
+
+Votre boucle doit parcourir les événements Pygame avec :
+
+```python
+for event in pygame.event.get():
+    ...
+```
+
+#### a) Quitter le jeu
+- Si l’utilisateur ferme la fenêtre, vous devez arrêter la boucle principale.
+- Indice : vérifiez si l’événement est de type `pygame.QUIT`.
+
+#### b) Détecter les touches clavier (KEYDOWN)
+Vous devez utiliser les événements `KEYDOWN` pour détecter lorsqu’une touche est **pressée** :
+
+```python
+if event.type == pygame.KEYDOWN:
+    ...
+```
+
+Ensuite, vous devez vérifier la touche pressée via `event.key`.
+
+#### c) Contrôles à implémenter (Flappy Bird)
+- **Touche ESPACE (`pygame.K_SPACE`)** :
+  - Si la partie **n’est pas terminée** (l’oiseau a encore des vies), l’oiseau doit **sauter**.
+  - Pour cela, appelez la fonction `jump()`.
+
+- **Touche R (`pygame.K_r`)** :
+  - Si la partie est **terminée** (plus aucune vie), la touche **R** doit **relancer une partie**.
+  - Pour cela, appelez la fonction `restart_game()`.
+
+#### d) Affichage « Game Over »
+Lorsque la partie est terminée (plus de vie), vous devez :
+1. afficher le message de fin de partie via `show_game_over_message()`,
+2. ignorer le reste de la boucle (ne pas appliquer la gravité, ne pas déplacer les tuyaux, etc.).
+
+💡 Indice : après avoir affiché le message, vous pouvez utiliser `continue` pour passer directement à l’itération suivante de la boucle `while running`.
+
+> ⚠️ Important : pendant l’état « Game Over », **l’espace ne doit plus déclencher de saut**.
+
+---
+
 # Directives pour la remise 
 
 Pour remettre votre travail, vous devez créez un fichier zip nommé XXXXX_YYYYY-PR01.zip, où XXXXX est votre nom de famille et YYYYY, votre prénom. Ce fichier zip devra contenir le dossier `2026H-PR01` avec l'ensemble des fichiers du projet.
