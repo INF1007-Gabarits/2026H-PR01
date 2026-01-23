@@ -151,13 +151,9 @@ Dans le fichier `pipes.py`, vous devez préparer les images des tuyaux qui servi
 
 ⚠️ **Cette étape est obligatoire avant toute génération de tuyaux.**
 
-**Étapes ultra-guidées :**
 
-1. Utilisez `pygame.image.load("assets/pipe-green.png")` pour charger l’image du tuyau.
-2. Redimensionnez immédiatement cette image avec :
-   ```python
-   pygame.transform.scale(image, PIPE_SIZE)
-   ```
+1. Chargez l’image du tuyau.
+2. Redimensionnez immédiatement cette image pour qu'elle soit à la taille de `PIPE_SIZE`.
 3. Créez un dictionnaire nommé `pipes_dict` contenant exactement deux clés :
    - `"bottom"` : image du tuyau orientée vers le bas (image normale)
    - `"top"` : image retournée verticalement à l’aide de :
