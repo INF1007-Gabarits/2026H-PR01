@@ -63,7 +63,7 @@ def show_game_over_message():
 
     font = pygame.font.SysFont(None, 72)
     text = font.render("Game Over", True, (255, 0, 0))
-    hint = pygame.font.SysFont(None, 36).render("Appuyer R pour recommencer", True, (255, 255, 255))
+    hint = pygame.font.SysFont(None, 36).render("Appuyer sur R pour recommencer", True, (255, 255, 255))
 
     GAME_WINDOW.blit(text, text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)))
     GAME_WINDOW.blit(hint, hint.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 80)))
