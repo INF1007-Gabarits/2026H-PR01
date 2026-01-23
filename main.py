@@ -45,7 +45,7 @@ while running:
             running = False
 
         if event.type == pygame.KEYDOWN:
-            if bird_dict["lives"] <= 0 and event.key in [pygame.K_SPACE, pygame.K_r]:
+            if bird_dict["lives"] <= 0 and event.key==pygame.K_r:
                 restart_game()
             elif event.key == pygame.K_SPACE and bird_dict["lives"] > 0:
                 jump()
