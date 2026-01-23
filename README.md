@@ -410,8 +410,8 @@ Ensuite, vous devez vérifier la touche pressée via `event.key`.
 
 #### Étape 4 : Affichage « Game Over »
 Lorsque la partie est terminée (plus de vie), vous devez :
-1. afficher le message de fin de partie via `show_game_over_message()`,
-2. ignorer le reste de la boucle (ne pas appliquer la gravité, ne pas déplacer les tuyaux, etc.).
+  - afficher le message de fin de partie via `show_game_over_message()`,
+  - ignorer le reste de la boucle (ne pas appliquer la gravité, ne pas déplacer les tuyaux, etc.).
 
 💡 Indice : après avoir affiché le message, vous pouvez utiliser `continue` pour passer directement à l’itération suivante de la boucle `while running`.
 
