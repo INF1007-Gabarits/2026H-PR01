@@ -352,15 +352,13 @@ Dans `main.py`, vous devez générer une première paire de tuyaux **avant** que
 Dans `main.py`, complétez la fonction `restart_game()` pour recommencer une partie.
 
 **Elle doit :**
-1. Remettre l’oiseau en position de départ :
-   - `x = 100` (ou `BIRD_X`)
-   - `y = 512` (ou `SCREEN_HEIGHT // 2`)
+1. Remettre l’oiseau en position de départ
 2. Remettre la vitesse verticale à `0`
 3. Réinitialiser :
-   - `lives = 3` (ou `LIVES`)
-   - `score = 0`
-4. Vider la liste `PIPES` (`PIPES.clear()`)
-5. Ajouter une nouvelle paire de tuyaux (`add_pipes()`)
+   - `lives` à 3
+   - `score` à 0
+4. Vider la liste `PIPES` (utiliser la fonction `clear()`)
+5. Ajouter une nouvelle paire de tuyaux
 
 ---
 
