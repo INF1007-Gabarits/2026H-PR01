@@ -293,8 +293,7 @@ Toujours dans `game.py` :
 
 **Déplacement (`move_pipes`)**
 - Parcourez la liste `PIPES`
-- Pour chaque tuyau, faites :
-  - `pipe["x"] -= PIPE_SPEED`
+- Pour chaque tuyau, retrancher `PIPE_SPEED` à la valeur `x` de la position du tuyau.
 
 **Suppression (`remove_offscreen_pipes`)**
 - Supprimez les tuyaux qui sont entièrement sortis de l’écran par la gauche.
