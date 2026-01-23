@@ -217,7 +217,7 @@ bottom_y = random.randint(min_bottom_y, max_bottom_y)
 
 ---
 
-### Étape 5 : Correction si le tuyau du haut sort de l’écran
+#### Étape 5 : Correction si le tuyau du haut sort de l’écran
 
 Après avoir calculé la position du tuyau du haut, il est possible que celui-ci soit
 placé trop près du haut de l’écran, voire partiellement hors de la zone visible.
