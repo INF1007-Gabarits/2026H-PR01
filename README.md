@@ -386,46 +386,57 @@ Votre fichier zip est à remettre dans la boîte de remise sur Moodle prévue à
 
 Le projet est noté sur **20 points**. Le barème détaillé est le suivant :
 
-| **Partie** | **Tâche** | **Points** |
-|-----------|----------|------------|
-| **PARTIE 1 : L’oiseau 🐦** | | **/4** |
-| 1.1 : Chargement de l’image de l’oiseau | | |
-| | Image chargée depuis le dossier `assets` | 0.5 |
-| | Image redimensionnée avec `BIRD_SIZE` | 0.5 |
-| 1.2 : Initialisation du dictionnaire `bird_dict` | | |
-| | Position horizontale correcte (`BIRD_X`) | 0.5 |
-| | Position verticale centrée dans l’écran | 0.5 |
-| | Initialisation correcte de `vel_y`, `lives`, `score` | 1 |
-| **PARTIE 2 : Les tuyaux 🟩** | | **/6** |
-| 2.1 : Chargement des images des tuyaux | | |
-| | Image du tuyau chargée correctement | 0.5 |
-| | Redimensionnement avec `PIPE_SIZE` | 0.5 |
-| | Création du dictionnaire `pipes_dict` avec tuyau haut et bas | 1 |
-| 2.2 : Génération des paires de tuyaux | | |
-| | Génération d’un gap aléatoire entre `MIN_PIPE_GAP` et `MAX_PIPE_GAP` | 1 |
-| | Positionnement cohérent du tuyau du bas | 0.5 |
-| | Calcul correct de la position du tuyau du haut | 0.5 |
-| | Création des dictionnaires de tuyaux | 0.5 |
-| | Ajout des dictionnaires de tuyaux dans `PIPES` | 0.5 |
-| **PARTIE 3 : Physique et déplacements 🎮** | | **/5** |
-| 3.1 : Gravité | | |
-| | Ajout de la gravité à la vitesse verticale | 1 |
-| | Mise à jour correcte de la position verticale | 1 |
-| 3.2 : Saut | | |
-| | Réinitialisation de la vitesse verticale | 0.5 |
-| | Application correcte de `JUMP_VELOCITY` | 0.5 |
-| 3.3 : Déplacement et suppression des tuyaux | | |
-| | Déplacement des tuyaux vers la gauche avec `PIPE_SPEED` | 1 |
-| | Suppression des tuyaux hors écran | 1 |
-| **PARTIE 4 : Collisions et score 💥** | | **/5** |
-| 4.1 : Détection de collision | | |
-| | Création correcte des rectangles de collision | 1 |
-| | Détection des collisions oiseau / tuyaux | 1 |
-| | Détection des collisions avec le sol ou le haut de l’écran | 1 |
-| 4.2 : Score | | |
-| | Détection du passage de l’oiseau devant un tuyau | 1 |
-| | Incrémentation correcte du score (0.5 par tuyau) | 1 |
-| **Total** | | **/20** |
+| **Partie**                                        | **Tâche**                                                            | **Points** |
+| ------------------------------------------------- | -------------------------------------------------------------------- | ---------- |
+| **PARTIE 1 : L’oiseau 🐦**                        |                                                                      | **/4**     |
+| 1.1 : Chargement de l’image de l’oiseau           |                                                                      |            |
+|                                                   | Image chargée depuis le dossier `assets`                             | 0.5        |
+|                                                   | Image redimensionnée avec `BIRD_SIZE`                                | 0.5        |
+| 1.2 : Initialisation du dictionnaire `bird_dict`  |                                                                      |            |
+|                                                   | Position horizontale correcte (`BIRD_X`)                             | 0.5        |
+|                                                   | Position verticale centrée dans l’écran                              | 0.5        |
+|                                                   | Initialisation correcte de `vel_y`, `lives`, `score`                 | 1          |
+| **PARTIE 2 : Les tuyaux 🟩**                      |                                                                      | **/6**     |
+| 2.1 : Chargement des images des tuyaux            |                                                                      |            |
+|                                                   | Image du tuyau chargée correctement                                  | 0.5        |
+|                                                   | Redimensionnement avec `PIPE_SIZE`                                   | 0.5        |
+|                                                   | Création du dictionnaire `pipes_dict` avec tuyau haut et bas         | 1          |
+| 2.2 : Génération des paires de tuyaux             |                                                                      |            |
+|                                                   | Génération d’un gap aléatoire entre `MIN_PIPE_GAP` et `MAX_PIPE_GAP` | 1          |
+|                                                   | Positionnement cohérent du tuyau du bas                              | 0.5        |
+|                                                   | Calcul correct de la position du tuyau du haut                       | 0.5        |
+|                                                   | Création des dictionnaires de tuyaux                                 | 0.5        |
+|                                                   | Ajout des dictionnaires de tuyaux dans `PIPES`                       | 0.5        |
+| **PARTIE 3 : Physique et déplacements 🎮**        |                                                                      | **/4**     |
+| 3.1 : Gravité                                     |                                                                      |            |
+|                                                   | Ajout de la gravité à la vitesse verticale                           | 1          |
+|                                                   | Mise à jour correcte de la position verticale                        | 1          |
+| 3.2 : Saut                                        |                                                                      |            |
+|                                                   | Réinitialisation de la vitesse verticale                             | 0.5        |
+|                                                   | Application correcte de `JUMP_VELOCITY`                              | 0.5        |
+| 3.3 : Déplacement et suppression des tuyaux       |                                                                      |            |
+|                                                   | Déplacement des tuyaux vers la gauche avec `PIPE_SPEED`              | 0.5        |
+|                                                   | Suppression des tuyaux hors écran                                    | 0.5        |
+| **PARTIE 4 : Collisions et score 💥**             |                                                                      | **/4**     |
+| 4.1 : Détection de collision                      |                                                                      |            |
+|                                                   | Création correcte des rectangles de collision                        | 1          |
+|                                                   | Détection des collisions oiseau / tuyaux                             | 1          |
+|                                                   | Détection des collisions avec le sol ou le haut de l’écran           | 0.5        |
+| 4.2 : Score                                       |                                                                      |            |
+|                                                   | Détection du passage de l’oiseau devant un tuyau                     | 0.75       |
+|                                                   | Incrémentation correcte du score (0.5 par tuyau)                     | 0.75       |
+| **PARTIE 5 : Boucle principale & redémarrage 🔁** |                                                                      | **/3**     |
+| 5.1 : Initialisation du jeu                       |                                                                      |            |
+|                                                   | Génération d’une première paire de tuyaux avant la boucle            | 0.5        |
+| 5.2 : Fonction `restart_game()`                   |                                                                      |            |
+|                                                   | Réinitialisation correcte de la position et vitesse de l’oiseau      | 0.5        |
+|                                                   | Réinitialisation des vies et du score                                | 0.5        |
+|                                                   | Vidage de la liste `PIPES`                                           | 0.5        |
+|                                                   | Ajout d’une nouvelle paire de tuyaux                                 | 0.5        |
+| 5.3 : Génération continue des tuyaux              |                                                                      |            |
+|                                                   | Ajout dynamique de nouvelles paires pendant la partie                | 0.5        |
+| **Total**                                         |                                                                      | **/20**    |
+
 
 ---
 
