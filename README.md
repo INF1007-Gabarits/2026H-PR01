@@ -328,8 +328,7 @@ Complétez la fonction `update_score()`.
 **Principe :** le score augmente lorsque l’oiseau dépasse un tuyau.
 
 **Étapes à suivre :**
-1. Pour chaque tuyau, vérifiez si le tuyau est entièrement derrière l’oiseau.
-   - Exemple de condition : `pipe["x"] + pipe["width"] < bird_dict["x"]`
+1. Pour chaque tuyau, vérifiez (en écrivant une condition) si le tuyau est entièrement derrière l’oiseau.
 2. Assurez-vous que le tuyau n’a pas déjà été comptabilisé (`passed == False`).
 3. Marquez le tuyau comme passé : `pipe["passed"] = True`
 4. Ajoutez `0.5` au score.
