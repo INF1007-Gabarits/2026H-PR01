@@ -185,11 +185,8 @@ Dans le fichier `window.py`, complétez la fonction `add_pipes()`.
 
 #### Étape 2 : Calcul du gap vertical
 
-- Générez un nombre aléatoire représentant l’espace libre entre les deux tuyaux.
-- Utilisez impérativement :
-  ```python
-  gap = random.randint(MIN_PIPE_GAP, MAX_PIPE_GAP)
-  ```
+- Générez un nombre aléatoire représentant l’espace libre entre les deux tuyaux. Ce nombre doit être compris entre la valeur minimale et la valeur maximale définies pour le "gap" dans le fichier config.py.
+- Pour cela, utiliser la fonction random.randint().
 
 ---
 
@@ -197,7 +194,7 @@ Dans le fichier `window.py`, complétez la fonction `add_pipes()`.
 
 - Choisissez d’abord la position verticale du **tuyau du bas**.
 - Cette position doit respecter deux contraintes :
-  - ne pas être trop près du bas de l’écran (sinon l’oiseau n’a aucune chance),
+  - ne pas être trop près du bas de l’écran (sinon l’oiseau n’a aucune chance de passer),
   - laisser assez de place pour le tuyau du haut.
 
 💡 **Indication concrète** (vous pouvez reprendre cette logique telle quelle) :
