@@ -298,8 +298,7 @@ Toujours dans `game.py` :
 
 **Suppression (`remove_offscreen_pipes`)**
 - Supprimez les tuyaux qui sont entièrement sortis de l’écran par la gauche.
-- Condition typique :
-  - un tuyau est hors écran si `pipe["x"] + pipe["width"] < 0`
+- Pour ce faire, calculez la condition pour laquelle le tuyau est hors écran en fonction de `pipe["x"] + pipe["width"]`
 
 ✅ Ces deux fonctions permettent de maintenir un nombre raisonnable de tuyaux et d’assurer un défilement fluide.
 
