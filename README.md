@@ -217,18 +217,17 @@ bottom_y = random.randint(min_bottom_y, max_bottom_y)
 
 ---
 
-#### Étape 5 : Correction si le tuyau du haut sort de l’écran
+### Étape 5 : Correction si le tuyau du haut sort de l’écran
 
-- Si le tuyau du haut est trop proche du haut de l’écran, vous devez **corriger les positions**.
+Après avoir calculé la position du tuyau du haut, il est possible que celui-ci soit
+placé trop près du haut de l’écran, voire partiellement hors de la zone visible.
 
-💡 Exemple de test :
-```python
-if top_y + PIPE_SIZE[1] < 100:
-    top_y = 100 - PIPE_SIZE[1]
-    bottom_y = top_y + PIPE_SIZE[1] + gap
-```
+Vous devez donc :
+1. vérifier si le tuyau du haut dépasse une zone minimale autorisée en haut de l’écran,
+2. si c’est le cas, ajuster sa position verticale pour qu’il reste entièrement visible,
+3. recalculer ensuite la position du tuyau du bas **en conservant exactement le même espace (`gap`) entre les deux tuyaux**.
 
-⚠️ Le `gap` doit **rester identique** après correction.
+⚠️ La valeur du `gap` ne doit jamais être modifiée lors de cette correction.
 
 ---
 
