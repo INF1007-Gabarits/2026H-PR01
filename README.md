@@ -13,6 +13,8 @@ Dans ce projet, vous aurez comme tâche de compléter une version simplifiée du
 
 Flappy Bird est un jeu d’arcade dans lequel le joueur contrôle un oiseau qui avance automatiquement vers la droite. L’objectif est de **faire passer l’oiseau entre des paires de tuyaux** sans les toucher, tout en évitant de heurter le sol ou de sortir de l’écran par le haut.
 
+https://github.com/user-attachments/assets/c7677911-2557-4cae-97b8-98ea4cb7d585
+
 Le joueur dispose de **3 vies**. Une vie est perdue lorsqu’une collision est détectée avec un tuyau ou lorsque l’oiseau touche le sol ou le haut de l’écran. La partie se termine lorsque toutes les vies sont perdues.
 
 Afin de simplifier votre travail, **l’interface graphique et la structure générale du jeu sont déjà fournies**. Votre tâche consiste à implémenter la logique du jeu :
