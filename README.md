@@ -3,7 +3,7 @@
 ## Directives
 :alarm_clock: **Date de remise** : 22 février 2026 à minuit 
 
-:mailbox_with_mail: **Remise** : sur Moodle (voir directives en fin de document)
+:mailbox_with_mail: **Remise** : sur Github
 
 ---
 
@@ -418,13 +418,6 @@ Lorsque la partie est terminée (plus de vie), vous devez :
 
 ---
 
-# Directives pour la remise 
-
-Pour remettre votre travail, vous devez créez un fichier zip nommé XXXXX_YYYYY-PR01.zip, où XXXXX est votre nom de famille et YYYYY, votre prénom. Ce fichier zip devra contenir le dossier `2026H-PR01` avec l'ensemble des fichiers du projet.
-
-Votre fichier zip est à remettre dans la boîte de remise sur Moodle prévue à cet effet, le 22 février avant minuit. 
-
----
 
 # Barème de correction
 
