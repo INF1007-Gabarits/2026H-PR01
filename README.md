@@ -425,7 +425,7 @@ Le projet est noté sur **20 points**. Le barème détaillé est le suivant :
 
 | **Partie**                                        | **Tâche**                                                            | **Points** |
 | ------------------------------------------------- | -------------------------------------------------------------------- | ---------- |
-| **PARTIE 1 : L’oiseau 🐦**                        |                                                                      | **/4**     |
+| **PARTIE 1 : L’oiseau 🐦**                        |                                                                      | **/3**     |
 | 1.1 : Chargement de l’image de l’oiseau           |                                                                      |            |
 |                                                   | Image chargée depuis le dossier `assets`                             | 0.5        |
 |                                                   | Image redimensionnée avec `BIRD_SIZE`                                | 0.5        |
@@ -433,7 +433,7 @@ Le projet est noté sur **20 points**. Le barème détaillé est le suivant :
 |                                                   | Position horizontale correcte (`BIRD_X`)                             | 0.5        |
 |                                                   | Position verticale centrée dans l’écran                              | 0.5        |
 |                                                   | Initialisation correcte de `vel_y`, `lives`, `score`                 | 1          |
-| **PARTIE 2 : Les tuyaux 🟩**                      |                                                                      | **/6**     |
+| **PARTIE 2 : Les tuyaux 🟩**                      |                                                                      | **/5**     |
 | 2.1 : Chargement des images des tuyaux            |                                                                      |            |
 |                                                   | Image du tuyau chargée correctement                                  | 0.5        |
 |                                                   | Redimensionnement avec `PIPE_SIZE`                                   | 0.5        |
@@ -462,7 +462,7 @@ Le projet est noté sur **20 points**. Le barème détaillé est le suivant :
 | 4.2 : Score                                       |                                                                      |            |
 |                                                   | Détection du passage de l’oiseau devant un tuyau                     | 0.75       |
 |                                                   | Incrémentation correcte du score (0.5 par tuyau)                     | 0.75       |
-| **PARTIE 5 : Boucle principale & redémarrage 🔁** |                                                                      | **/3**     |
+| **PARTIE 5 : Boucle principale & redémarrage 🔁** |                                                                      | **/4**     |
 | 5.1 : Initialisation du jeu                       |                                                                      |            |
 |                                                   | Génération d’une première paire de tuyaux avant la boucle            | 0.5        |
 | 5.2 : Fonction `restart_game()`                   |                                                                      |            |
@@ -471,10 +471,10 @@ Le projet est noté sur **20 points**. Le barème détaillé est le suivant :
 |                                                   | Vidage de la liste `PIPES`                                           | 0.25       |
 |                                                   | Ajout d’une nouvelle paire de tuyaux                                 | 0.25       |
 | 5.3 : Génération continue des tuyaux              |                                                                      |            |
-|                                                   | Ajout dynamique de nouvelles paires pendant la partie                | 0.5        |
+|                                                   | Ajout dynamique de nouvelles paires pendant la partie                | 1        |
 | 5.4 : Gestion des événements & fin de partie      |                                                                      |            |
 |                                                   | Gestion de `pygame.QUIT` (fermeture de la fenêtre)                   | 0.25       |
-|                                                   | Gestion de `KEYDOWN` : `SPACE` (saut) et `R` (redémarrage)            | 0.25       |
+|                                                   | Gestion de `KEYDOWN` : `SPACE` (saut) et `R` (redémarrage)            | 0.5       |
 |                                                   | Blocage du jeu en état *Game Over* (`continue`, pas de saut possible) | 0.25       |
 | **Total**                                         |                                                                      | **/20**    |
 
